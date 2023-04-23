@@ -1,0 +1,80 @@
+<mat-accordion [multi]="multi" class="faq-container">
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          ¿When is the mint date?
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>The mint date will be on February 29</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          When is the white list mint?
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>We will share the link through the discord with the people who are there.</p>
+    </mat-expansion-panel>
+
+    <!-- Mint questions -->
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Where is the mint?
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>The link of the mint page will be shared in our official discord and twitter when the timer hit 0: 0: 0: 0</p>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          What wallet can I use for the mint?
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>You can use Phantom wallet</p>
+    </mat-expansion-panel>
+
+      <!-- Preguntas Seguridad -->
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            How can I know that you are reliable?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>The entire team of this project is sharing who each one is in real life, in this way we intend to take responsibility for what happens with this project.</p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            How can I protect my money on the chaotic mint day?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>We highly recommend to make a burn wallet, it is just a wallet with the amount of the price of all NFTs that you will mint and the gas fees for all the transactions.</p>
+      </mat-expansion-panel>
+  
+      <!-- develop questions -->
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            On which blockchain the NFTs are on?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>These collection and the upcoming will exist in solana network.</p>
+      </mat-expansion-panel>
+  
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            How are made the sons of gods?
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Our professional designer made the layers in Blender, ..., ... and our programmers mixed it with a custom candy machine, except for the gods who are made manually each of them.</p>
+      </mat-expansion-panel>
+  
+  
+  
+    </mat-accordion>

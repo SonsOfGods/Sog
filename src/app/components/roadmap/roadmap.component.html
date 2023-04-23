@@ -1,0 +1,5 @@
+<div [@enterState] class="roadmap_master_container">
+  <div class="title">{{'Roadmap' | translate}}</div>
+  <img [lazyLoad]="'../../../assets/roadmap/roadmapEN_4.0.png'" *ngIf="selectedLang==='en'" />
+  <img [lazyLoad]="'../../../assets/roadmap/roadmapES_4.0.png'" *ngIf="selectedLang==='es'" />
+</div>

@@ -1,0 +1,37 @@
+.roadmap_master_container {
+  margin-top: 200px;
+  width: 100% !important;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/* Image */
+.roadmap_master_container img {
+  max-width: 100% !important;
+  width: 35%;
+  filter: brightness(1.2) saturate(1.6);
+  position: relative;
+  right: 3%;
+}
+
+@media (max-width: 1100px) {
+  .roadmap_master_container img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .roadmap_master_container {
+    margin-top: 80px;
+  }
+
+  .roadmap_master_container img {
+    width: 98%;
+    right: 0;
+  }
+}

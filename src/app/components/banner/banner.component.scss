@@ -1,0 +1,311 @@
+.banner_container {
+  width: 100% !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  overflow-y: hidden;
+  flex-direction: column;
+  justify-content: flex-end !important;
+  transition: all 1s ease-in-out;
+}
+
+.banner_content_container {
+  margin-top: 100px !important;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../assets/banner/fondo_banner.png");
+  background-repeat: round;
+}
+
+.comming_soon_img {
+  width: 40%;
+  margin-bottom: -50px;
+}
+
+.discord_container{
+z-index: 95095 !important;  
+}
+
+.social_medias {
+  float: left;
+  display: flex;
+  margin-top: 46px;
+  z-index: 1000;
+}
+
+.ng-fa-icon {
+  padding: 20px;
+  font-size: 300%;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+}
+
+/* Add a hover effect if you want */
+.ng-fa-icon:hover {
+  opacity: 0.7;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.logo_img {
+  margin-bottom: 220%;
+}
+
+.zeus_container {
+  height: 100%;
+  width: 45%;
+  z-index: 1000;
+}
+
+.zeus {
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.poseidon_container {
+  height: 100%;
+  width: 45%;
+  z-index: 40;
+}
+
+.poseidon {
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo_counter_container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+  overflow: visible;
+}
+
+.logo_banner_container img {
+  width: 200% !important;
+}
+
+.logo_banner_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+
+.mat-grid-tile {
+  width: 100%;
+}
+
+.mat-grid-tile-content {
+  width: 100%;
+}
+
+.banner {
+  height: max-content;
+  margin-top: 100px;
+  width: 100%;
+  z-index: -10;
+  position: fixed;
+}
+
+.row {
+  position: absolute;
+  z-index: 50;
+}
+
+.timeCounter {
+  width: 100% !important;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 50;
+  margin-top: 129px !important; 
+}
+
+/* Button */
+.timeCounter button{
+  width: 300px;
+  height: 70px;
+  background-color:#000000;
+  border-top-left-radius:13px;
+  border-top-right-radius:13px;
+  border-bottom-left-radius:13px;
+  border-bottom-right-radius:13px;
+  font-size: 30px;
+  color:#ffffff;
+  border-color:#ffffff;
+  transition: all 0.5s ease-in-out;
+ }
+
+ .timeCounter button:hover{
+  box-shadow: 0px 4px 28px -2px #ffd500 !important;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+ }
+
+@media (max-width: 1600px) {
+  .comming_soon_img {
+    width: 30%;
+    margin-bottom: -50px;
+  }
+
+  .timeCounter button{
+    width: 256px;
+    height: 60px;
+    font-size: 25px;
+   }
+}
+
+@media (max-width: 1200px) {
+  .social_medias {
+    margin-top: 17px;
+    z-index: 1000;
+  }
+
+  .timeCounter button{
+    width: 210px;
+    height: 45px;
+    font-size: 20px;
+   }
+
+  .ng-fa-icon {
+    font-size: 200%;
+  }
+
+  .banner {
+    width: 100% !important;
+    left: -67px;
+  }
+}
+
+@media (max-width: 1024px) {
+  // .comming_soon_img {
+  //   width: 20%;
+  // }
+}
+
+@media (max-width: 800px) {
+  .banner {
+    width: 150% !important;
+    height: 40%;
+    margin-top: 40px !important;
+  }
+
+  .zeus {
+    width: 150% !important;
+    z-index: 1000;
+  }
+
+  .zeus_container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    position: unset;
+    z-index: 1000;
+  }
+
+  .poseidon_container {
+    width: 80%;
+    overflow: hidden;
+    z-index: 40;
+  }
+
+  .poseidon {
+    width: 150% !important;
+    z-index: 40;
+  }
+
+  .logo_img {
+    margin-bottom: 220%;
+  }
+
+  .logo_banner_container img {
+    width: 280% !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .comming_soon_img {
+    width: 15%;
+  }
+
+  .logo_img {
+    margin-bottom: 200%;
+  }
+
+  .timeCounter {
+    height: 10%;
+  }
+
+  .social_medias {
+    margin-top: 30px;
+    z-index: 1000;
+  }
+
+  .timeCounter button{
+    width: 180px;
+    font-size: 25px;
+   }
+
+  .ng-fa-icon {
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner_container {
+    height: 300px;
+  }
+  
+  .social_medias {
+    margin-top: 20px;
+    z-index: 1000;
+  }
+
+  .timeCounter button{
+    width: 133px;
+    height: 30px;
+    font-size: 15px;
+   }
+  
+  #timer {
+    margin-top: 120px;
+  }
+
+  .comming_soon_img {
+    width: 10%;
+  }
+
+  .ng-fa-icon {
+    padding: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner_container {
+    height: 250px;
+  }
+
+  .social_medias {
+    margin-top: 15px;
+  }
+}

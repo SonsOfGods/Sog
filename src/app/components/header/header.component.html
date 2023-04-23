@@ -1,0 +1,49 @@
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="logo-mat">
+        <div class="logo">
+          <a
+            ><img src="../../../assets/logosonofgods.png"
+          /></a>
+        </div>
+      </div>
+      <div class="menu-mat">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#lorePosition">
+              {{ "lore" | translate }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sonsPosition"> SOG </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#roadmapPosition">
+              {{ "roadmap" | translate }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://medium.com/@sonsofgodsmaster/sons-of-gods-a-real-word-nft-project-ff305bd04dec" target="_blank">
+              {{ "Whitepaper" | translate }}
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#teamPosition">
+              {{ "team" | translate }}</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqPosition"> FAQ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="lang-selector-mat">
+        <div class="idiom_button" (click)="changeLenguage()">
+          <div id="es" class="es" *ngIf="selectedLang == 'es'"><img src="../../../assets/logos/spain.png" alt=""></div>
+          <div id="en" class="es" *ngIf="selectedLang == 'en'"><img src="../../../assets/logos/uk.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

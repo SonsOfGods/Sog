@@ -1,0 +1,29 @@
+.master_container {
+  opacity: 0;
+  z-index: -10000;
+  width: 100% !important;;
+}
+
+.show {
+  opacity: 1;
+  transition: visibility 0s, opacity 0.2s linear;
+  width: 100%;
+}
+
+.notShow {
+  opacity: 0;
+  transition: visibility 0s, opacity 1s linear;
+  z-index: -10000;
+}
+
+.notShowFast {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s, opacity 0.2s linear;
+}
+
+.ShowFast {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.2s linear;
+}

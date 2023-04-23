@@ -1,0 +1,312 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "~@angular/material" as mat;
+@import "../../SonsOfGodsWeb/node_modules/swiper/swiper.min.css";
+@import "../../SonsOfGodsWeb/node_modules/swiper/swiper-bundle.min.css";
+
+// Plus imports for other components in your app.
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$sons-of-gods-primary: mat.define-palette(mat.$indigo-palette);
+$sons-of-gods-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+// The warn palette is optional (defaults to red).
+$sons-of-gods-warn: mat.define-palette(mat.$red-palette);
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$sons-of-gods-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $sons-of-gods-primary,
+      accent: $sons-of-gods-accent,
+      warn: $sons-of-gods-warn,
+    ),
+  )
+);
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($sons-of-gods-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: black;
+  margin: 0 !important;
+  color: white;
+}
+
+@import url("//fonts.googleapis.com/css2?family=Cinzel+Decorative:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+// SCROLLBAR //
+
+::-webkit-scrollbar {
+  width: 4px;
+  overflow-y: scroll;
+  background: grey;
+  box-shadow: inset 0 0 4px #707070;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e9d885;
+  border-radius: 10px;
+}
+
+// END SCROLLBAR //
+
+// TITLES //
+
+.title {
+  position: relative;
+  top: 0px;
+  bottom: 29px;
+  text-align: center;
+  font-family: "Cinzel Decorative", display;
+  text-shadow: none !important;
+  letter-spacing: 4px;
+  color: #e9d885;
+  font-weight: 600;
+  font-size: 45px !important;
+}
+
+// END TITLES //
+
+// SWIPER //
+
+#master .swiper-pointer-events .swiper-button-next {
+  color: #d7c123;
+  margin-right: 70px;
+}
+
+/* Swiper button disabled */
+#master .swiper-pointer-events .swiper-button-disabled {
+  color: #d7c123;
+  margin-left: 70px;
+}
+
+/* Swiper button prev */
+#master .swiper-pointer-events .swiper-button-prev {
+  margin-left: 70px;
+  color: #d7c123;
+}
+
+.swiper-pointer-events .swiper-pagination-bullet-active {
+  color: #d7c123;
+  background-color: #d7c123;
+}
+
+/* Span Tag */
+.swiper-pointer-events span {
+  background-color: #d7c123;
+}
+
+// END SWIPER
+
+/* Timer */
+
+#timer div {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(84, 27, 27, 0) !important;
+}
+
+@import url("//fonts.googleapis.com/css2?family=Cinzel+Decorative:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("//fonts.googleapis.com/css2?family=Caesar+Dressing:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+#timer {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  text-shadow: rgb(100, 50, 50) 0px 0px 2px, rgb(255, 255, 255) 0px 0px 4px,
+    rgb(255, 255, 255) 0px 0px 6px, rgb(198, 178, 32) 0px 0px 8px,
+    rgb(198, 178, 32) 0px 0px 12px, rgb(198, 178, 32) 0px 0px 16px,
+    rgb(198, 178, 32) 0px 0px 20px, rgb(198, 178, 32) 0px 0px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 50px !important;
+  width: max-content !important;
+  margin-top: 50px;
+}
+
+/* Division */
+#timer div {
+  width: 48px !important;
+  //display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  float: none;
+  clear: none;
+  opacity: 1;
+  pointer-events: auto;
+}
+// Player //
+
+.mat-slider-focus-ring {
+  background-color: #00ff00 !important;
+}
+
+.ngx-audio-player {
+  color: #000000 !important;
+  background-color: #000000 !important;
+  min-width: none !important;
+}
+.player_container .player .player_back {
+  background-color: #c20000;
+}
+
+.ngx-col[_ngcontent-ndj-c170] {
+  background-color: #000000 !important;
+  color: #000000 !important;
+}
+/* Mat slider horizontal */
+.mat-card .ngx-col .ngx-flex-fill .mat-slider {
+  background-color: #000000;
+}
+
+/* Mat slider wrapper */
+.ngx-col .ngx-flex .mat-slider-wrapper {
+  background-color: #ffffff;
+}
+
+/* Material icons */
+.ngx-audio-player .mat-button-base .material-icons {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Mat button base */
+#master app-lore .mat-button-base {
+  background-color: #000000;
+}
+
+/* Audio player */
+#master app-lore .ngx-audio-player {
+  background-color: #000000;
+}
+
+/* Block */
+.ngx-col .ngx-flex-fill .ngx-d-sm-block {
+  transform: translatex(0px) translatey(0px) !important;
+}
+
+/* Span Tag */
+.ngx-col .ngx-d-sm-block span {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Division */
+.ngx-col .ngx-flex-fill .ngx-py-3 {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+/* Mat slider wrapper */
+.ngx-col .ngx-flex-fill .mat-slider-wrapper {
+  background-color: #9e9e9e;
+}
+
+/* Mat slider thumb */
+.mat-slider-wrapper .mat-slider-thumb {
+  background-color: #bca91f;
+  box-shadow: 0px 0px 29px 6px #fede75;
+}
+
+/* Mat slider track fill */
+.mat-slider-wrapper .mat-slider-track-wrapper .mat-slider-track-fill {
+  background-color: #bca91f;
+  box-shadow: 0px 0px 29px 6px #fede75;
+}
+
+.mat-slider-wrapper .mat-slider-thumb {
+  background-color: #bca91f !important;
+  box-shadow: 0px 0px 29px 6px #fede75 !important;
+}
+
+#master .player .ngx-audio-player {
+  border-color: #bca91f;
+  border-style: solid;
+  border-width: 0.5px;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+
+// END Player //
+
+@media (max-width: 1400px) {
+  #timer {
+    font-size: 35px;
+    margin-top: 70px;
+    font-size: 40px !important;
+  }
+
+  #timer div {
+    width: 40px !important;
+    margin: 5px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  #timer div {
+    font-size: 25px;
+    width: 20px !important;
+    //width: 15% !important;
+    padding-bottom: 0px !important;
+
+    // font-size: 30px;
+    // width: 15% !important;
+  }
+}
+
+@media (max-width: 850px) {
+  #timer div {
+    padding: 10px !important;
+    margin: 0px !important;
+  }
+
+  .title {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #timer {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  #timer {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  #timer div {
+    font-size: 20px;
+    padding: 5px !important;
+  }
+
+  #timer div span {
+    margin-top: 0 !important;
+  }
+
+  #master .player .ngx-audio-player {
+    min-width: 221px;
+    width: 221px;
+  }
+}
+
+@media (max-width: 400px) {
+  #timer{
+    margin-top: 40px;
+  }
+
+  #timer div {
+    font-size: 17px;
+    padding: 4px !important;
+  }
+}

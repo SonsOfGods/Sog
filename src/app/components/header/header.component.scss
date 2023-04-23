@@ -1,0 +1,171 @@
+.header {
+  width: 100% !important;
+  height: 100px;
+  background: rgba(0, 0, 0, 0);
+  position: fixed;
+  z-index: 100000000000000;
+}
+
+.container {
+  height: 100% !important;
+}
+
+.row {
+  width: 100%;
+  height: 100% !important;
+  height: 6em;
+}
+
+.logo {
+  height: max-content;
+  width: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 140px !important;
+  height: 81px !important;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: max-content;
+}
+
+li {
+  float: left;
+  width: max-content;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(205, 127, 50);
+}
+
+.navbar-nav .nav-item a {
+  font-size: 20px;
+  font-family: "Cinzel Decorative", display;
+}
+
+.idiom_button:hover {
+  font-size: 17px;
+  transition: font-size 0.5s ease-in-out;
+  color: #ffd500;
+  cursor: pointer;
+}
+
+.header .container .row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 100px;
+}
+
+.logo-mat {
+  width: 20%;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-mat {
+  width: 60%;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+}
+
+.lang-selector-mat {
+  width: 20%;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1290px) {
+  .header {
+    height: 80px !important;
+  }
+
+  .logo a {
+    height: 100%;
+  }
+
+  .logo img {
+    width: 120px !important;
+    height: 70px !important;
+  }
+
+  .navbar-nav .nav-item a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo img {
+    width: 100px !important;
+    height: 55px !important;
+  }
+
+  .menu-mat {
+    width: 70%;
+  }
+
+  .lang-selector-mat {
+    width: 10%;
+  }
+}
+
+.es img {
+  width: 2rem;
+  filter: brightness(0.83);
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    width: 100px !important;
+    height: 55px !important;
+  }
+
+  .logo-mat {
+    visibility: hidden;
+    width: 0%;
+  }
+
+  .menu-mat {
+    width: 90%;
+    justify-content: flex-start;
+  }
+
+  li a {
+    padding: 7px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-nav .nav-item a {
+    font-size: 11px !important;
+  }
+}
+@media (max-width: 300px) {
+  .menu-mat {
+    width: 0;
+  }
+}
